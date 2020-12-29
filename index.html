@@ -9,17 +9,75 @@
     <title>The Instagram Post with Bootstrap</title>
 </head>
 <body>
-    <div class="nav-wrapper col-12">
-        <div class="row d-flex justify-content-center ">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <i class="fab fa-instagram fa-lg"></i>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-        </div>
+	<div class="containter-fluid">
+		<div class="row d-flex justify-content-center ">
+			<div class="col-12 ">
+				<nav class="navbar navbar-light  bg-light">
+					<a class="navbar-brand p-1 ml-5 text-muted" href="#">
+						<i class="fab fa-instagram fa-lg "></i>Instagram</a>
+                        <div class="nav-item pr-4 d-flex justify-content-end">
+                            <button type="button" class="btn btn-info btn-lg bg-success" data-toggle="modal" data-target="#myModal">Create a new post</button>
+                            <div id="myModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
 
+                                        <div class="modal-body border border-dark rounded m-3">
+                                            <p>
+                                                <placeholder></placeholder>
+                                            </p>
+                                        </div>
+
+                                        <div class="modal-icons">
+                                            <i class="fas fa-camera border border-secondary rounded p-1 ml-2"></i>
+                                            <i class="fas fa-map-marker-alt border border-secondary rounded-lg p-1 "></i>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default border border-secondary" data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-default text-white bg-success" data-dismiss="modal">Publish</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-cog"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right " aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+				    </nav>
+            	</div>
+        </div>
     </div>
+    <div class="container">
+    <div class="row justify-content-center">
+        <div class="card-group" style="width: 50rem">
+            <div class="card m-3 ml-3">
+                <div class="row col-6">
+					<p class="title w-50 bd-highlight">
+					<strong> Tinydumpsterdog</strong></p>
+					<p class="number p-2 flex-shrink-1 bd-highlight mr-2">1/9</p>
+                </div>
+                <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+					<div class="img-caption p-2">
+						<p><b>317 Likes</b></p>
+					</div>
+                    <div class="card-body p-0">
+                    <hr>
+                        <p class="card-text">Lorem ipsum sit amet, consectetur adipiscing elit. Ut maximus aliquam, at euismod diam maximus id. Fusce ornare, arcu quis sodales tempus.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
